@@ -1,0 +1,50 @@
+[
+  {
+    "id": "builtin_text-tR6d1p",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "{{event.preview}}"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-06-25T16:22:24.217Z",
+    "modifiedOn": "2021-06-25T19:24:53.929Z"
+  },
+  {
+    "id": "builtin_text-_hDXwY",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Falha no request"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-06-25T16:24:28.045Z",
+    "modifiedOn": "2021-06-25T16:24:28.045Z"
+  },
+  {
+    "id": "builtin_text-0fM8bG",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "{{temp.response.status}}",
+      "variations$en": [
+        "",
+        ""
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-06-25T16:28:48.842Z",
+    "modifiedOn": "2021-06-25T18:38:28.312Z"
+  },
+  {
+    "id": "builtin_text-T8-Lb2",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "sucesso"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-06-25T20:12:37.040Z",
+    "modifiedOn": "2021-06-25T20:12:37.040Z"
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "session.response.status  == 'true'",
+        "node": ""
+      }
+    ]
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "chama_api"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "55a8d472cb",
+      "name": "chama_api",
+      "next": [
+        {
+          "condition": "true",
+          "node": "lista_operacoes"
+        }
+      ],
+      "onEnter": [
+        "teste {}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "afdf87584f",
+      "name": "lista_operacoes",
+      "next": [
+        {
+          "condition": "true",
+          "node": "executa_operacao"
+        }
+      ],
+      "onEnter": [
+        "exectest {}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "c5704e2f4f",
+      "name": "executa_operacao",
+      "next": [
+        {
+          "condition": "session.response.status   === false",
+          "node": "lista_operacoes"
+        },
+        {
+          "condition": "session.response.status   === true",
+          "node": "operacao_acionada"
+        }
+      ],
+      "onEnter": [
+        "operacao {}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "c9109610fa",
+      "name": "operacao_acionada",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "chamaoperacao {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}
